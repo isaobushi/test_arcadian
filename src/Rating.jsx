@@ -7,7 +7,9 @@ export default class Rating extends React.Component {
     super(props)
     this.state = {
       id: props.data,
-      rate: []
+      rate: [],
+      styleTile: {opacity: '1'}
+
     }
   } 
   componentDidMount = async () => {
@@ -15,9 +17,21 @@ export default class Rating extends React.Component {
         const rateRes = res.data.rating
         this.setState({rate: rateRes})
   }
+  
   render(){
+    let rating = Math.round(this.state.rate * 100) /100
+    let starOn = `fa fa-star checked`
+    let starOff = `fa fa-star`
+
     return(
-        <div>{this.state.rate}</div>
+        <div 
+          style={this.state.styleTile}
+          className='rate'>
+          <span className={rating >= 1 ? starOn : starOff}></span>
+          <span className={rating >= 2 ? starOn : starOff}></span>
+          <span className={rating >= 3 ? starOn : starOff}></span>
+          <span className={rating >= 4 ? starOn : starOff}></span>
+          <span className={rating >= 5 ? starOn : starOff}></span> {rating}</div>
     )
   }
 }

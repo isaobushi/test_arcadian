@@ -7,13 +7,12 @@ export default function Header(){
   <header className="main-header">
     <nav className="top-nav">
       <ul className="list-nav">
-        <li className="nav-item main-logo">
+        <li className=" main-logo">
         <img className="bunnings-logo" src="https://vignette.wikia.nocookie.net/logopedia/images/7/72/Bunnings_Warehouse.svg/revision/latest?cb=20140912204721" alt="Bunnings-logo"/></li>
-        <li className="nav-item">Articles</li>
-        <li className="nav-item">Search</li>
-        <li className="nav-item">News</li>
-        <li className="nav-item">Contact</li>
-        <li className="nav-item">About</li> 
+        <a href="#" className='link-nav'><li className="nav-item">Search</li></a>
+        <a href="#" className='link-nav'><li className="nav-item">News</li></a>
+        <a href="#" className='link-nav'><li className="nav-item">Contact</li></a>
+        <a href="#" className='link-nav'><li className="nav-item">About</li> </a>
       </ul>
     </nav>
   </header>
