@@ -1,7 +1,5 @@
 import React from 'react';
 import Post from './Post';
-import Header from './Header'
-
 
 export default class Homepage extends React.Component {
 
@@ -65,7 +63,18 @@ export default class Homepage extends React.Component {
 		const collectionPosts = this.state.collection
 		return (
       <div className='main-wrapper' >
-				<Header />
+				<header className="main-header">
+    <nav className="top-nav">
+      <ul className="list-nav">
+        <li className=" main-logo">
+        <img className="bunnings-logo" src="https://vignette.wikia.nocookie.net/logopedia/images/7/72/Bunnings_Warehouse.svg/revision/latest?cb=20140912204721" alt="Bunnings-logo"/></li>
+        <input className='search-bar'type="text"/>
+        <a href="#" className='link-nav'><li className="nav-item">News</li></a>
+        <a href="#" className='link-nav'><li className="nav-item">Contact</li></a>
+        <a href="#" className='link-nav'><li className="nav-item">About</li> </a>
+      </ul>
+    </nav>
+  </header>
 				<div className="wrapper-tiles">
 				{
 				collectionPosts.map(post =>  {
