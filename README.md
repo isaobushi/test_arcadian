@@ -1,3 +1,5 @@
+
+https://test-arcadian.herokuapp.com/
 **Technical Decisions**
 
 The initial thought was to create a more scalable and decoupled application, so to provide a more solid foundation for the future. Therefore, the state was governed by two entities, the App, and the Ratings, given that these are the two components which either interact with the user, or require outside data.
