@@ -64,8 +64,8 @@ export default class Post extends React.Component {
           style={styleTile}
         >{author}</div></div>
         <a className='link-tile' href="#">
-              <p 
-              style={styleTile}className='link-read-more' >Read more...</p >
+              <span
+              style={styleTile}className='link-read-more' > Read more...</span >
         </a>
        </div>
     )

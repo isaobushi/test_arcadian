@@ -75,7 +75,11 @@ export default class Homepage extends React.Component {
 				}) 
 				}
 				</div>
-
+			<footer className="footer-nav">
+				<a href="#" className="footer-link" >Contacts</a>
+				<a href="#" className="footer-link" >Services</a>
+				<a href="#" className="footer-link" >Our Sites</a>
+			</footer>
 			</div>		
 		)	
 	}
